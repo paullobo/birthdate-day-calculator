@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata START -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Computes your Birthdate day in desired year." />
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <!-- Metadata END -->
+    <title>Birthday Cal</title>
+
+    <!-- Stylesheets START -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="./assets/fonts/fonts.css" rel="stylesheet"/>
+    <!-- Stylesheets END -->
+
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="title">Birthday Cal</div>
+        <div id="card-container">
+          <!-- Cards based on days of week  START-->
+          <div class="card">
+            <div class="card-title">MON</div>
+            <div class="card-body" id="card-mon"></div>
+            <div class="desc-text" id="desc-mon"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">TUE</div>
+            <div class="card-body" id="card-tue"></div>
+            <div class="desc-text" id="desc-tue"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">WED</div>
+            <div class="card-body" id="card-wed"></div>
+            <div class="desc-text" id="desc-wed"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">THU</div>
+            <div class="card-body" id="card-thu"></div>
+            <div class="desc-text" id="desc-thu"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">FRI</div>
+            <div class="card-body" id="card-fri"></div>
+            <div class="desc-text" id="desc-fri"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">SAT</div>
+            <div class="card-body" id="card-sat"></div>
+            <div class="desc-text" id="desc-sat"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">SUN</div>
+            <div class="card-body" id="card-sun"></div>
+            <div class="desc-text" id="desc-sun"></div>
+          </div>
+          <!-- Cards based on days of week  END-->
+        </div>
+  
+        <!-- Input area block START -->
+        <form action="#" id="birthday-cal-form">
+          <div id="input-container">
+            <div id="left-block">
+              <textarea
+                id="input-area"
+                placeholder='Paste or Enter your JSON here'
+                required
+              ></textarea>
+            </div>
+            <div id="right-block">
+              <label for="year-input">Year</label>
+              <input
+                type="text"
+                id="year-input"
+                placeholder="Enter the Year (yyyy)"
+                maxlength="4"
+                pattern="\d{4}"
+                required
+              />
+              <input type="submit" id="update-btn" value="UPDATE"/>
+            </div>
+          </div>
+        </form>
+        <!-- Input area block START -->
+
+      <!-- Horizontal Line START -->
+      <div class="hr-line"></div>
+      <!-- Horizontal Line END -->
+
+    </div>
+  </body>
+  
+  <!-- Scripts START -->
+  <script src="./scripts/utils/index.js"></script>
+  <script src="./scripts/index.js"></script>
+  <!-- Scripts END -->
+
+</html>

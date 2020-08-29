@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,body {
+    height: 100%;
+    background-color: rgba(234,240,242,1);
+  }
+
+  body{
+    margin-right: auto;
+    margin-left:  auto;
+    width: 90%;
+  }
+
+  #title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI SemiLight';
+    color: rgba(90,106,119,1);
+    padding: 40px;
+    font-size: 2.5rem;
+  }
+
+  #card-container {
+    margin-top: 30px;
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    height: 190px;
+    width: 150px;
+    border: 1px solid #dddbe8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    margin: 26px 5px;
+    background: white;
+    -webkit-box-shadow: 0px 6px 9px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 9px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 9px -7px rgba(0,0,0,0.75);
+  }
+
+  .card-title {
+    background-color: rgba(171,158,238,1);
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Segoe UI SemiBold';
+    font-size:18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 16px;
+  }
+  
+  .card-body {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .block-square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300; 
+    font-size: 1rem;
+    color: white;
+    font-family: 'Segoe UI SemiBold';
+    background: #f3f2f2;
+  }
+
+  .desc-text{
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI SemiBold';
+    color: #7e7e80;
+  }
+
+  .block-square:hover{
+    opacity: 0.8;
+  }
+
+  .noBirthday-img{
+    width: 40%;
+  }
+
+  label {
+    color: grey;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  ::placeholder {
+    font-size: 1rem;
+    color: rgb(187, 176, 176);
+  }
+  
+  :-ms-input-placeholder {
+    font-size: 1rem;
+    color: rgb(187, 176, 176);
+  }
+  
+  ::-ms-input-placeholder {
+    font-size: 1rem;
+    color: rgb(187, 176, 176);
+  }
+
+  #input-container {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+
+  }
+  
+  #left-block {
+    max-width: 700px;
+    width: 60%;
+  }
+  
+  #right-block {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  
+  #input-area {
+    height: 100%;
+    min-height: 300px;
+    width: 90%;
+    outline: none;
+    border: 1px solid #b9b6b6;
+    padding: 12px;
+  }
+  
+  #year-input{
+    width: 195px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  #update-btn{
+    width: 150px;
+    background-color: #3186ef;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 6px 9px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 9px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 9px -10px rgba(0,0,0,0.75);
+  }
+
+  #update-btn:hover{
+    opacity: 0.8;
+  }
+  
+  .hr-line {
+    margin: 30px 0;
+    height: 1px;
+    background: -webkit-gradient(linear,0 0,100% 0,from(#eaf0f2),to(#eaf0f2),color-stop(50%, #cac8c8)
+    );
+  }
+  
